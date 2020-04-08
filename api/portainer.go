@@ -586,11 +586,12 @@ type (
 
 	// EdgeGroup represents an Edge group
 	EdgeGroup struct {
-		ID        EdgeGroupID  `json:"Id"`
-		Name      string       `json:"Name"`
-		Dynamic   bool         `json:"Dynamic"`
-		TagIDs    []TagID      `json:"TagIds"`
-		Endpoints []EndpointID `json:"Endpoints"`
+		ID              EdgeGroupID  `json:"Id"`
+		Name            string       `json:"Name"`
+		Dynamic         bool         `json:"Dynamic"`
+		TagIDs          []TagID      `json:"TagIds"`
+		Endpoints       []EndpointID `json:"Endpoints"`
+		MustHaveAllTags bool         `json:"MustHaveAllTags"`
 	}
 
 	//EdgeStackID represents an edge stack id
